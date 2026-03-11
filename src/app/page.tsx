@@ -1,4 +1,5 @@
 export default function LandingPage() {
+  const Link = require('next/link').default;
   return (
     <main className="min-h-screen flex flex-col premium-gradient text-foreground">
       {/* Navbar skeleton */}
@@ -23,9 +24,9 @@ export default function LandingPage() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-primary text-primary-foreground px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(250,204,21,0.2)]">
+          <Link href="/watches" className="bg-primary text-primary-foreground px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(250,204,21,0.2)]">
             Explore Watch Passport
-          </button>
+          </Link>
           <button className="glass-panel text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-white/5 transition-all">
             View Market Index
           </button>
